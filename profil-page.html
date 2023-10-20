@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Quiz App - Profil</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="profil-page.css" />
   </head>
   <body>
     <header>
@@ -17,85 +18,74 @@
     </header>
 
     <section class="profile-section">
-      <article class="profile">
+      <article class="user-profile">
         <img
           class="profile-image"
           src="https://profile-images.xing.com/images/fa862de3cf8ebbf5a7f1900d120641c2-4/franziska-adam.1024x1024.jpg"
           alt="Profile-image"
         />
-        <div class="question-box">
-          <p class="question">
-            What do the famous words of Julias Caesar "Alea iacta est" mean?
-          </p>
-          <button type="button">Show Answer</button>
-          <p class="answer">The die is cast</p>
-        </div>
-        <div class="tag-box">
-          <p class="tag">#rome</p>
-          <p class="tag">#history</p>
-          <p class="tag">#funfacts</p>
-        </div>
+        <h2 class="user-name">Franzi Adam</h2>
       </article>
-      <article class="app-card">
-        <img
-          class="bookmark"
-          src="https://cdn-icons-png.flaticon.com/128/2832/2832530.png"
-          alt="marked bookmark"
-        />
-        <div class="question-box">
-          <p class="question">
-            What is the name of the cartoon elephant with big ears?
-          </p>
-          <button type="button">Show Answer</button>
-          <p class="answer">Dumbo</p>
-        </div>
-        <div class="tag-box">
-          <p class="tag">#disney</p>
-          <p class="tag">#cartoon</p>
-          <p class="tag">#childhood</p>
-          <p class="tag">#funfacts</p>
-        </div>
-      </article>
-      <article class="app-card">
-        <img
-          class="bookmark"
-          src="https://cdn-icons-png.flaticon.com/128/2832/2832530.png"
-          alt="marked bookmark"
-        />
-        <div class="question-box">
-          <p class="question">Who painted Mona Lisa?</p>
-          <button type="button">Show Answer</button>
-          <p class="answer">Leonardo da Vinci</p>
-        </div>
-        <div class="tag-box">
-          <p class="tag">#art</p>
-          <p class="tag">#history</p>
-          <p class="tag">#museum</p>
-          <p class="tag">#funfacts</p>
-        </div>
+      <article class="user-info">
+        <h3 class="user-headline">About me</h3>
+        <p class="user-text">
+          Aesthetics enthusiast. Passion for design and technology, constantly
+          seeking new challenges and knowledge. Let's explore the visual wonders
+          of the world together.
+        </p>
       </article>
     </section>
 
-    <footer>
-      <ul class="ul-footer">
-        <li>
-          <a class="link" href="#home"
+    <section class="counter-section">
+      <div class="counter">
+        <img
+          class="counter-img"
+          src="https://cdn-icons-png.flaticon.com/128/3524/3524335.png"
+          alt="questionmark"
+        />
+        <p class="counter-number">12</p>
+      </div>
+      <div class="counter">
+        <img
+          class="counter-img"
+          src="https://cdn-icons-png.flaticon.com/128/2832/2832515.png"
+          alt="bookmark"
+        />
+        <p class="counter-number">4</p>
+      </div>
+    </section>
+
+    <section class="setting-section">
+      <h3 class="setting-head">Settings</h3>
+      <div class="setting">
+        <p>Dark Mode</p>
+        <label class="switch">
+          <input type="checkbox" />
+          <span></span>
+        </label>
+      </div>
+    </section>
+
+    <section class="nav-bottom">
+      <ul class="ul-nav-bottom">
+        <li class="inactive">
+          <a class="link" href="index.html"
             ><img
-              class="icon"
+              class="icon home"
               src="https://cdn-icons-png.flaticon.com/128/88/88282.png"
               alt="home icon"
           /></a>
         </li>
-        <li>
-          <a class="link" href="#bookmark"
+        <li class="inactive">
+          <a class="link" href="bookmark-page.html"
             ><img
               class="icon"
               src="https://cdn-icons-png.flaticon.com/128/2832/2832515.png"
               alt="bookmark icon"
           /></a>
         </li>
-        <li>
-          <a class="link" href="#profil"
+        <li class="active">
+          <a class="link" href="#"
             ><img
               class="icon"
               src="https://cdn-icons-png.flaticon.com/128/1946/1946429.png"
@@ -103,6 +93,6 @@
           /></a>
         </li>
       </ul>
-    </footer>
+    </section>
   </body>
 </html>

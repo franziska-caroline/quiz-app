@@ -16,6 +16,7 @@ header {
   background-color: rgb(250, 227, 198);
   padding: 1rem;
   font-weight: bolder;
+  width: 100%;
 }
 
 /* App Content */
@@ -110,21 +111,20 @@ button:hover {
 }
 
 .icon {
-  height: 50px;
+  height: 40px;
 }
 
 .active {
   background-color: rgb(236, 148, 41);
-  border-radius: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .inactive {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
