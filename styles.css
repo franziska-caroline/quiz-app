@@ -93,22 +93,38 @@ button:hover {
   color: rgb(250, 227, 198);
 }
 
-/* Footer */
+/* nav bar bottom */
 
-footer {
+.nav-bottom {
   position: fixed;
   width: 100%;
   bottom: 0;
   background-color: rgb(250, 227, 198);
 }
 
-.ul-footer {
+.ul-nav-bottom {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-evenly;
   list-style: none;
-  padding: 10px;
 }
 
 .icon {
   height: 50px;
+}
+
+.active {
+  background-color: rgb(236, 148, 41);
+  border-radius: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.inactive {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
