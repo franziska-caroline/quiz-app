@@ -1,28 +1,32 @@
 .nav-bottom {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    background-color: var(--lightorange);
-  }
-  
-  .ul-nav-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    list-style: none;
-  }
-  
-  .icon {
-    height: 40px;
-  }
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: var(--lightorange);
+}
 
-  .flex {
-    padding: 10px;
-    display: flex;
-    justify-content: center;}
+.ul-nav-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
 
-  .active {
-    background-color: var(--orange);
-  }
-  
-  
+.icon {
+  height: 40px;
+}
+
+.flex {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.active {
+  background-color: var(--orange);
+  width: 100%;
+}
+
+.inactive {
+  width: 100%;
+}
