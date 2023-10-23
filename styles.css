@@ -1,3 +1,11 @@
 @import "componants/global.css";
 @import "componants/question-box.css";
 @import "componants/nav-bottom.css";
+
+:root {
+    --darkpurple: rgb(29, 2, 51);
+    --purple: rgb(63, 6, 110);
+    --lightpurple: rgb(217, 197, 247);
+    --orange: rgb(236, 148, 41);
+    --lightorange: rgb(250, 227, 198);
+}

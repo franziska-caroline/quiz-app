@@ -12,11 +12,11 @@
   header {
     display: flex;
     justify-content: center;
-    color: rgb(29, 2, 51);
-    background-color: rgb(250, 227, 198);
+    color: var(--orange);
+    background-color: var(--lightorange);
     padding: 1rem;
     font-weight: bolder;
     width: 100%;
   }
 
-  
+

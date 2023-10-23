@@ -2,7 +2,7 @@
     position: fixed;
     width: 100%;
     bottom: 0;
-    background-color: rgb(250, 227, 198);
+    background-color: var(--lightorange);
   }
   
   .ul-nav-bottom {
@@ -15,19 +15,14 @@
   .icon {
     height: 40px;
   }
-  
+
+  .flex {
+    padding: 10px;
+    display: flex;
+    justify-content: center;}
+
   .active {
-    background-color: rgb(236, 148, 41);
-    padding: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    background-color: var(--orange);
   }
   
-  .inactive {
-    padding: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
   
