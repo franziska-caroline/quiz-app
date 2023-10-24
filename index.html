@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="./index.js" defer></script>
+    <script src="js/index.js" defer></script>
   </head>
   <body>
     <header role="header">
@@ -21,20 +21,31 @@
     <main role="main">
       <ul class="app-content">
         <li class="app__question">
-          <button class="button-bookmark" role="button" aria-label="bookmark" onclick="getElement()" type="button">
-          <img
-            class="bookmark"
-            src="images/bookmark-icon-unmarked.png"
-            alt="marked bookmark"
-            date-js="bookmark-icon-unmarked"
-            id="bookmark-image"
-          />
-        </button>
+          <button
+            class="button-bookmark"
+            role="button"
+            aria-label="bookmark"
+            onclick="toggleBookmark()"
+            type="button"
+            data-js="button-bookmark"
+          >
+            <img
+              class="bookmark"
+              src="images/bookmark-icon-unmarked.png"
+              alt="marked bookmark"
+              data-js="bookmark-icon-unmarked"
+            />
+          </button>
           <div class="question-box">
             <p class="question">
               What do the famous words of Julias Caesar "Alea iacta est" mean?
             </p>
-            <button class="button-answer" role="button" aria-label="show answer" type="button">
+            <button
+              class="button-answer"
+              role="button"
+              aria-label="show answer"
+              type="button"
+            >
               Show Answer
             </button>
             <p class="answer">The die is cast</p>
@@ -47,19 +58,29 @@
         </li>
 
         <li class="app__question">
-          <button class="button-bookmark" role="button" aria-label="bookmark" type="button">
+          <button
+            class="button-bookmark"
+            role="button"
+            aria-label="bookmark"
+            type="button"
+          >
             <img
               class="bookmark"
               src="images/bookmark-icon-unmarked.png"
               alt="marked bookmark"
-              date-js="bookmark-icon-unmarked"
+              data-js="bookmark-icon-unmarked"
             />
           </button>
           <div class="question-box">
             <p class="question">
               What is the name of the cartoon elephant with big ears?
             </p>
-            <button class="button-answer" role="button" aria-label="show answer" type="button">
+            <button
+              class="button-answer"
+              role="button"
+              aria-label="show answer"
+              type="button"
+            >
               Show Answer
             </button>
             <p class="answer">Dumbo</p>
@@ -73,17 +94,27 @@
         </li>
 
         <li class="app__question">
-          <button class="button-bookmark" role="button" aria-label="bookmark" type="button">
+          <button
+            class="button-bookmark"
+            role="button"
+            aria-label="bookmark"
+            type="button"
+          >
             <img
               class="bookmark"
               src="images/bookmark-icon-unmarked.png"
               alt="marked bookmark"
-              date-js="bookmark-icon-unmarked"
+              data-js="bookmark-icon-unmarked"
             />
           </button>
           <div class="question-box">
             <p class="question">Who painted Mona Lisa?</p>
-            <button class="button-answer" role="button" aria-label="show answer" type="button">
+            <button
+              class="button-answer"
+              role="button"
+              aria-label="show answer"
+              type="button"
+            >
               Show Answer
             </button>
             <p class="answer">Leonardo da Vinci</p>
