@@ -19,7 +19,6 @@ main {
 
 .question-box {
   text-align: center;
-  padding-top: 25px;
 }
 
 .bookmark {
@@ -29,7 +28,7 @@ main {
   height: 50px;
 }
 
-button {
+.button-answer {
   padding: 10px 40px 10px 40px;
   font-family: "Poppins", sans-serif;
   background-color: var(--darkpurple);
@@ -37,7 +36,7 @@ button {
   margin-top: 15px;
 }
 
-button:hover {
+.button-answer:hover {
   background-color: var(--purple);
   color: var(--lightpurple);
 }

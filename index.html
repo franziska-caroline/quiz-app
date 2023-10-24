@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <header role="header">
@@ -20,16 +21,20 @@
     <main role="main">
       <ul class="app-content">
         <li class="app__question">
+          <button class="button-bookmark" role="button" aria-label="bookmark" onclick="getElement()" type="button">
           <img
             class="bookmark"
-            src="images/bookmark-icon-marked.png"
+            src="images/bookmark-icon-unmarked.png"
             alt="marked bookmark"
+            date-js="bookmark-icon-unmarked"
+            id="bookmark-image"
           />
+        </button>
           <div class="question-box">
             <p class="question">
               What do the famous words of Julias Caesar "Alea iacta est" mean?
             </p>
-            <button role="button" aria-label="show answer" type="button">
+            <button class="button-answer" role="button" aria-label="show answer" type="button">
               Show Answer
             </button>
             <p class="answer">The die is cast</p>
@@ -42,16 +47,19 @@
         </li>
 
         <li class="app__question">
-          <img
-            class="bookmark"
-            src="https://cdn-icons-png.flaticon.com/128/2832/2832530.png"
-            alt="marked bookmark"
-          />
+          <button class="button-bookmark" role="button" aria-label="bookmark" type="button">
+            <img
+              class="bookmark"
+              src="images/bookmark-icon-unmarked.png"
+              alt="marked bookmark"
+              date-js="bookmark-icon-unmarked"
+            />
+          </button>
           <div class="question-box">
             <p class="question">
               What is the name of the cartoon elephant with big ears?
             </p>
-            <button role="button" aria-label="show answer" type="button">
+            <button class="button-answer" role="button" aria-label="show answer" type="button">
               Show Answer
             </button>
             <p class="answer">Dumbo</p>
@@ -65,14 +73,17 @@
         </li>
 
         <li class="app__question">
-          <img
-            class="bookmark"
-            src="https://cdn-icons-png.flaticon.com/128/2832/2832530.png"
-            alt="marked bookmark"
-          />
+          <button class="button-bookmark" role="button" aria-label="bookmark" type="button">
+            <img
+              class="bookmark"
+              src="images/bookmark-icon-unmarked.png"
+              alt="marked bookmark"
+              date-js="bookmark-icon-unmarked"
+            />
+          </button>
           <div class="question-box">
             <p class="question">Who painted Mona Lisa?</p>
-            <button role="button" aria-label="show answer" type="button">
+            <button class="button-answer" role="button" aria-label="show answer" type="button">
               Show Answer
             </button>
             <p class="answer">Leonardo da Vinci</p>
@@ -93,7 +104,7 @@
           <a class="link" href="#"
             ><img
               class="icon home"
-              src="/images/home-icon.png"
+              src="/images/home-icon-light.png"
               alt="home icon"
           /></a>
         </li>
@@ -101,7 +112,7 @@
           <a class="link" href="bookmark-page.html"
             ><img
               class="icon"
-              src="/images/bookmark-icon.png"
+              src="/images/bookmark-icon-dark.png"
               alt="bookmark icon"
           /></a>
         </li>
@@ -109,7 +120,7 @@
           <a class="link" href="profil-page.html"
             ><img
               class="icon"
-              src="images/profile-icon.png"
+              src="images/profile-icon-dark.png"
               alt="profil icon"
           /></a>
         </li>
