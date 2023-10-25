@@ -14,18 +14,21 @@
     <script src="js/index.js" defer></script>
   </head>
   <body>
+    <!-- Header -->
+
     <header role="header">
       <h1 class="app-name">Quiz App</h1>
     </header>
 
     <main role="main">
       <ul class="app-content">
+        <!-- Question 1-->
         <li class="app__question">
           <button
             class="button-bookmark"
             role="button"
             aria-label="bookmark"
-            onclick="toggleBookmark()"
+            onclick="toggleBookmark(event)"
             type="button"
             data-js="button-bookmark"
           >
@@ -57,12 +60,15 @@
           </ul>
         </li>
 
+        <!-- Question 2 -->
         <li class="app__question">
           <button
             class="button-bookmark"
             role="button"
             aria-label="bookmark"
+            onclick="toggleBookmark(event)"
             type="button"
+            data-js="button-bookmark"
           >
             <img
               class="bookmark"
@@ -93,12 +99,15 @@
           </ul>
         </li>
 
+        <!-- Question 3 -->
         <li class="app__question">
           <button
             class="button-bookmark"
             role="button"
             aria-label="bookmark"
+            onclick="toggleBookmark(event)"
             type="button"
+            data-js="button-bookmark"
           >
             <img
               class="bookmark"
@@ -128,6 +137,8 @@
         </li>
       </ul>
     </main>
+
+    <!-- Navigation Bottom -->
 
     <nav class="nav-bottom">
       <ul class="ul-nav-bottom">

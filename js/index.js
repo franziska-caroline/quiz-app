@@ -1,6 +1,4 @@
-
-function toggleBookmark() {
-  console.log("hallo");
+function toggleBookmark(event) {
   const button = document.querySelector('[data-js="button-bookmark"]');
   const image = button.querySelector('[data-js="bookmark-icon-unmarked"]');
 
