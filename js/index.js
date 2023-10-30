@@ -1,8 +1,10 @@
 // So bekomme ich alle Elememte mit dem Attribut data-js="button-bookmark"
-const buttons = document.querySelectorAll('[data-js="button-bookmark"]');
+const bookmarkButtons = document.querySelectorAll(
+  '[data-js="button-bookmark"]'
+);
 
 // So füge ich ein click event listener zu jedem einzelnen Button
-buttons.forEach((button) => {
+bookmarkButtons.forEach((button) => {
   button.addEventListener("click", toggleBookmark);
 });
 
@@ -16,3 +18,28 @@ function toggleBookmark(event) {
     image.src = "images/bookmark-icon-unmarked.png";
   }
 }
+
+const answerButtons = document.querySelectorAll('[data-js="button-answer"]');
+const answer = document.querySelector('[data-js="answer"]');
+
+answerButtons.addEventListener("click", () => {
+  removeAnswer();
+  addAnswer("var(--darkpurple)");
+});
+
+function removeAnswer() {
+  answer.classList.remove("var(--darkpurple)");
+}
+
+function addAnswer() {
+  answer.classList.add("color");
+}
+
+/*
+answerButtons.forEach((button) => {
+  button.addEventListener("click, toggleAnswerButton");
+});
+
+function toggleAnswerButton(event) {
+  const answerButton = event.currentTarget;
+} */

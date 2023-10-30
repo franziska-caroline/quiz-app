@@ -44,6 +44,7 @@ main {
 .answer {
   margin-top: 15px;
   text-transform: uppercase;
+  color: var(--darkpurple);
 }
 
 .tag-box {
