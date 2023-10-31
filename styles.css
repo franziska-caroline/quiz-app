@@ -1,8 +1,8 @@
-@import "componants/global.css";
-@import "componants/question-box.css";
-@import "componants/nav-bottom.css";
-@import "bookmark-page.css";
-@import "profil-page.css";
+@import "/componants/global.css";
+@import "/componants/question-box.css";
+@import "/componants/nav-bottom.css";
+@import "/componants/bookmark-page.css";
+@import "/componants/profil-page.css";
 
 :root {
   --darkpurple: rgb(29, 2, 51);
