@@ -1,4 +1,3 @@
-/*
 const answerButtons = document.querySelectorAll('[data-js="button-answer"]');
 
 answerButtons.forEach((button) => {
@@ -22,4 +21,3 @@ function answerButtons(event) {
     event.target.textContent = "Show Answer"; // Update the button text
   }
 }
-*/
