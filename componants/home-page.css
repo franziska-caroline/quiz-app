@@ -8,6 +8,10 @@ main {
   list-style: none;
 }
 
+.app__question:last-child {
+  margin-bottom: 80px;
+}
+
 .app__question {
   background-color: var(--lightpurple);
   border-radius: 10px;
