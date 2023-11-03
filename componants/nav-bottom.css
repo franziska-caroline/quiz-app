@@ -3,6 +3,7 @@
   width: 100%;
   bottom: 0;
   background-color: var(--lightorange);
+  z-index: 3;
 }
 
 .ul-nav-bottom {

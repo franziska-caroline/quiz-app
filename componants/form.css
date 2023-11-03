@@ -1,21 +1,29 @@
+main {
+  margin-bottom: 80px;
+}
 form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   border-radius: 10px;
-  margin: 50px 24px 80px 24px;
+  margin: 50px 24px 24px 24px;
   padding: 24px;
   border-radius: 10px;
   background-color: var(--lightpurple);
 }
 
-textarea,
-input {
-  margin: 5px 0 10px 0;
-  background-color: white;
+textarea {
+  margin: 5px 0 0 0;
   border-radius: 10px;
   padding: 10px;
+}
+
+input {
+  margin: 5px 0 15px 0;
+  border-radius: 10px;
+  padding: 10px;
+  height: 51px;
 }
 
 .add-question-button {
@@ -24,10 +32,6 @@ input {
   background-color: var(--darkpurple);
   color: var(--lightpurple);
   margin-top: 24px;
-}
-
-input {
-  height: 51px;
 }
 
 .submitButton {
@@ -41,4 +45,10 @@ input {
 .submitButton:hover {
   background-color: var(--purple);
   color: var(--lightpurple);
+}
+
+.form__character-count {
+  font-size: 0.75rem;
+  margin: 5px 0 15px 0;
+  text-align: end;
 }

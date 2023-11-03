@@ -23,8 +23,9 @@ form.addEventListener("submit", (event) => {
   const answer = formElement.answer.value;
   const tag = formElement.tag.value;
 
-  const newQuestion = document.createElement("li");
+  const newQuestion = document.createElement("ul");
   newQuestion.innerHTML = `
+  <ul class="app-content">
 <li class="app__question">
 <button
   class="button-bookmark"
@@ -59,10 +60,10 @@ form.addEventListener("submit", (event) => {
   </p>
 </div>
 <ul class="tag-box">
-${tag}
-  </li>
+<li class="tag">${tag}</li>
 </ul>
 </li>
+</ul>
 `;
 
   document.body.append(newQuestion);
@@ -70,3 +71,17 @@ ${tag}
   event.target.reset();
   event.target.elements["question"].focus();
 });
+
+// COUNTER
+const questionBox = document.querySelector('[data-js="question"]');
+const answerBox = document.querySelector('[data-js="answer"]');
+const characterCounter = document.querySelector('[data-js="counter"]');
+const maxLength = answer.getAttribute("maxlength");
+
+const countCharacters = () => {
+  const numberOfEnteredCharacters = questionBox.value.length;
+  const counter = maxLength - numberOfEnteredCharacters;
+  characterCounter.textContent = counter + " ";
+};
+
+questionBox.addEventListener("input", countCharacters);

@@ -5,14 +5,12 @@ main {
 }
 
 .app-content {
-  padding-bottom: 80px;
   list-style: none;
 }
 
 .app__question {
   background-color: var(--lightpurple);
   border-radius: 10px;
-  margin: 50px 24px 24px 24px;
   padding: 24px;
   position: relative;
 }
