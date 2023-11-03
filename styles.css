@@ -3,6 +3,7 @@
 @import "/componants/nav-bottom.css";
 @import "/componants/bookmark-page.css";
 @import "/componants/profil-page.css";
+@import "/componants/addQuestion.css";
 
 :root {
   --darkpurple: rgb(29, 2, 51);
