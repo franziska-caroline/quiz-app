@@ -68,7 +68,7 @@ header {
   padding-right: 10px;
 }
 
-.counter {
+.counterProfilepage {
   display: flex;
   align-items: center;
   background-color: rgb(217, 197, 247);
@@ -103,7 +103,11 @@ header {
   height: 34px;
 }
 
-.switch span {
+.switch input {
+  display: none;
+}
+
+.slider {
   /* heller HG des Schalters */
   position: absolute;
   background-color: rgb(217, 197, 247);
@@ -114,7 +118,7 @@ header {
   bottom: 0;
 }
 
-.switch span::before {
+.slider:before {
   /* weißer Kreis */
   background-color: white;
   border-radius: 50%;
@@ -126,16 +130,14 @@ header {
   width: 26px;
 }
 
-input:checked + span {
+input:checked + .slider {
   background-color: rgb(29, 2, 51);
 }
 
-input:checked + span::before {
-  transform: translateX(30px);
-}
-
-.switch input {
-  display: none;
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
 }
 
 /* nav bar bottom */
