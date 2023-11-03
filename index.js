@@ -8,7 +8,6 @@ const bookmarkButtons = document.querySelectorAll(
 // So füge ich ein click event listener zu jedem einzelnen Button
 bookmarkButtons.forEach((button) => {
   button.addEventListener("click", toggleBookmark);
-  console.log(bookmark);
 });
 
 function toggleBookmark(event) {
