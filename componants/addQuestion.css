@@ -1,0 +1,33 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  margin: 50px 24px 24px 24px;
+  padding: 24px;
+  border-radius: 10px;
+  background-color: var(--lightpurple);
+}
+
+label {
+}
+
+textarea,
+input {
+  margin: 10px 0 10px 0;
+  background-color: white;
+}
+
+textarea:last-child,
+input {
+  height: 20px;
+}
+
+.add-question-button {
+  padding: 10px 40px 10px 40px;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--darkpurple);
+  color: var(--lightpurple);
+  margin-top: 15px;
+}

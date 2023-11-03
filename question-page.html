@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header role="header">
+      <h1 class="app-name">Quiz App</h1>
+    </header>
+
+    <main role="main">
+      <form>
+        <label for="question">New Question</label>
+        <textarea name="question" id="question" rows="10"></textarea>
+        <label for="answer">The Answer</label>
+        <textarea
+          name="answer"
+          id="answer"
+          rows="2"
+          class="answer-field"
+        ></textarea>
+        <label for="tag">#Tag</label>
+        <input type="text" name="tag" id="tag" class="tag-field" />
+        <button class="add-question-button" type="submit">Submit</button>
+      </form>
+    </main>
+    <!-- Navigation Bottom -->
+
+    <nav class="nav-bottom">
+      <ul class="ul-nav-bottom">
+        <li class="inactive flex">
+          <a class="link" href="index.html"
+            ><img
+              class="icon home"
+              src="/images/home-icon-dark.png"
+              alt="home icon"
+          /></a>
+        </li>
+        <li class="inactive flex">
+          <a class="link" href="bookmark-page.html"
+            ><img
+              class="icon"
+              src="/images/bookmark-icon-dark.png"
+              alt="bookmark icon"
+          /></a>
+        </li>
+        <li class="active flex">
+          <a class="link" href="#">
+            <img class="icon" src="images/Plus_Icon.png" alt="add icon" />
+          </a>
+        </li>
+        <li class="inactive flex">
+          <a class="link" href="profil-page.html"
+            ><img
+              class="icon"
+              src="images/profile-icon-dark.png"
+              alt="profil icon"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
