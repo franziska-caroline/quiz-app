@@ -10,18 +10,11 @@ form {
   background-color: var(--lightpurple);
 }
 
-label {
-}
-
 textarea,
 input {
-  margin: 10px 0 10px 0;
+  margin: 5px 0 10px 0;
   background-color: white;
-}
-
-textarea:last-child,
-input {
-  height: 20px;
+  border-radius: 10px;
 }
 
 .add-question-button {
@@ -29,5 +22,9 @@ input {
   font-family: "Poppins", sans-serif;
   background-color: var(--darkpurple);
   color: var(--lightpurple);
-  margin-top: 15px;
+  margin-top: 24px;
+}
+
+input {
+  height: 31px;
 }

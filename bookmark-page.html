@@ -40,16 +40,20 @@
             <p class="question">
               What do the famous words of Julias Caesar "Alea iacta est" mean?
             </p>
+
+            <!-- vv ANSWER BUTTON vv -->
             <button
               class="button-answer"
               role="button"
               aria-label="show answer"
               type="button"
               data-js="button-answer"
+              onclick="toggleAnswer"
             >
               Show Answer
             </button>
-            <p class="answer" data-js="answer">The die is cast</p>
+            <p class="answer" data-js="answer" hidden>The die is cast</p>
+            <!-- ^^ ANSWER BUTTON ^^ -->
           </div>
           <ul class="tag-box">
             <li class="tag">#rome</li>
@@ -84,10 +88,12 @@
               role="button"
               aria-label="show answer"
               type="button"
+              data-js="button-answer"
+              onclick="toggleAnswer"
             >
               Show Answer
             </button>
-            <p class="answer">Dumbo</p>
+            <p class="answer" data-js="answer" hidden>Dumbo</p>
           </div>
           <ul class="tag-box">
             <li class="tag">#disney</li>
@@ -121,10 +127,12 @@
               role="button"
               aria-label="show answer"
               type="button"
+              data-js="button-answer"
+              onclick="toggleAnswer"
             >
               Show Answer
             </button>
-            <p class="answer">Leonardo da Vinci</p>
+            <p class="answer" data-js="answer" hidden>Leonardo da Vinci</p>
           </div>
           <ul class="tag-box">
             <li class="tag">#art</li>
@@ -155,7 +163,7 @@
           /></a>
         </li>
         <li class="inactive flex">
-          <a class="link" href="question-page.html">
+          <a class="link" href="form.html">
             <img class="icon" src="images/Plus_Icon.png" alt="add icon" />
           </a>
         </li>
