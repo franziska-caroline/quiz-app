@@ -23,6 +23,7 @@ function toggleBookmark(event) {
 
 /* ANSWER BUTTON */
 
+/*
 const answerButtons = document.querySelectorAll('[data-js="button-answer"]');
 
 answerButtons.forEach((button) => {
@@ -40,3 +41,4 @@ function answerBookmark(event) {
     answer.hasAttribute.hidden;
   }
 }
+*/

@@ -67,3 +67,18 @@ main {
   background-color: var(--orange);
   color: var(--lightorange);
 }
+
+.button-add {
+  background-color: var(--darkpurple);
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 80px;
+  left: 10px;
+  z-index: 3;
+
+  text-align: center;
+  font-size: 40px;
+  color: var(--lightpurple);
+}
