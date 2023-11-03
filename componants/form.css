@@ -47,7 +47,7 @@ input {
   color: var(--lightpurple);
 }
 
-.form__character-count {
+display {
   font-size: 0.75rem;
   margin: 5px 0 15px 0;
   text-align: end;
