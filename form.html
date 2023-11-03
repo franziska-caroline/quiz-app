@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="form.js" defer></script>
   </head>
   <body>
     <header role="header">
@@ -18,7 +19,7 @@
     </header>
 
     <main role="main">
-      <form>
+      <form data-js="form">
         <label for="question">New Question</label>
         <textarea name="question" id="question" rows="10"></textarea>
         <label for="answer">The Answer</label>
@@ -30,7 +31,9 @@
         ></textarea>
         <label for="tag">#Tag</label>
         <input type="text" name="tag" id="tag" class="tag-field" />
-        <button class="add-question-button" type="submit">Submit</button>
+        <button class="submitButton" type="submit" data-js="submitButton">
+          Submit
+        </button>
       </form>
     </main>
 
@@ -56,7 +59,7 @@
         </li>
         <li class="active flex">
           <a class="link" href="#">
-            <img class="icon" src="images/Plus_Icon.png" alt="add icon" />
+            <img class="icon" src="images/Plusicon-light.png" alt="add icon" />
           </a>
         </li>
         <li class="inactive flex">
