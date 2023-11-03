@@ -28,9 +28,7 @@
           maxlength="150"
           data-js="question"
         ></textarea>
-        <p class="form__character-count">
-          <span data-js="counter"></span>characters left
-        </p>
+        <display data-js="counterQuestion">150 characters left</display>
         <label for="answer">The Answer</label>
         <textarea
           name="answer"
@@ -40,9 +38,7 @@
           maxlength="150"
           data-js="answer"
         ></textarea>
-        <p class="form__character-count">
-          <span data-js="counter"></span>characters left
-        </p>
+        <display data-js="counterAnswer">150 characters left</display>
         <label for="tag">#Tag</label>
         <input type="text" name="tag" id="tag" class="tag-field" />
         <button class="submitButton" type="submit" data-js="submitButton">

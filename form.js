@@ -73,15 +73,19 @@ form.addEventListener("submit", (event) => {
 });
 
 // COUNTER
-const questionBox = document.querySelector('[data-js="question"]');
-const answerBox = document.querySelector('[data-js="answer"]');
-const characterCounter = document.querySelector('[data-js="counter"]');
-const maxLength = answer.getAttribute("maxlength");
+const yourQuestion = document.querySelector('[data-js="question"]');
+const yourAnswer = document.querySelector('[data-js="answer"]');
+const counter1 = document.querySelector('[data-js="counterQuestion"]');
+const counter2 = document.querySelector('[data-js="counterAnswer"]');
 
-const countCharacters = () => {
-  const numberOfEnteredCharacters = questionBox.value.length;
-  const counter = maxLength - numberOfEnteredCharacters;
-  characterCounter.textContent = counter + " ";
-};
+yourQuestion.addEventListener("input", () => {
+  const maxLengthQuestion = yourQuestion.getAttribute("maxlength");
+  const counter = maxLengthQuestion - yourQuestion.value.length;
+  counter1.innerText = `${counter} characters left`;
+});
 
-questionBox.addEventListener("input", countCharacters);
+yourAnswer.addEventListener("input", () => {
+  const maxLengthAnswer = yourAnswer.getAttribute("maxlength");
+  const counter = maxLengthAnswer - yourAnswer.value.length;
+  counter2.innerText = `${counter} characters left`;
+});
