@@ -52,3 +52,7 @@ display {
   margin: 5px 0 15px 0;
   text-align: end;
 }
+
+.app__question:last-child {
+  margin-bottom: 80px;
+}
