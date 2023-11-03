@@ -23,22 +23,14 @@ function toggleBookmark(event) {
 
 /* ANSWER BUTTON */
 
-/*
-const answerButtons = document.querySelectorAll('[data-js="button-answer"]');
+// 1. ich muss dem Butto aus dem HTML bekommen => const
+// 2. ich muss dem Button ein click event zu weisen
+// 3. ich brauche das HTML Element dass modifiziert wird (answer)
+// 4. Was muss dann passieren?
+// 5. Wenn ich auf den Button klicke soll das Attribut "hidden" getoggelt werden(da oder weg sein)
 
-answerButtons.forEach((button) => {
-  button.addEventListener("click", toggleAnswer);
+const answerButton = document.querySelector('[data-js="button-answer"]');
+const answer = document.querySelector('[data-js="answer"]');
+answerButton.addEventListener("click", () => {
+  answer.toggleAttribute("hidden");
 });
-
-function answerBookmark(event) {
-  console.log(hidden);
-  const button = event.currentTarget; // <= Der angeklickte Button
-  const answer = document.querySelector('[data-js="answer"]');
-
-  if (answer.hasAttribute.hidden) {
-    answer.removeAttribute.hidden;
-  } else {
-    answer.hasAttribute.hidden;
-  }
-}
-*/
