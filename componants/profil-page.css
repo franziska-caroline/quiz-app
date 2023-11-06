@@ -96,41 +96,50 @@ header {
   align-items: center;
 }
 
+.switch {
+  /* Das label-Element */
+  position: relative; /* Um im nächsten Schritt den runden Button mit position:absolute festzusetzen */
+  width: 64px;
+  height: 34px;
+}
+
 input[type="checkbox"] {
   height: 0;
   width: 0;
   visibility: hidden;
 }
 
-.label {
-  cursor: pointer;
-  width: 64px;
-  height: 34px;
-  background: rgb(217, 197, 247);
-  display: block;
-  border-radius: 100px;
-  position: relative;
+.slider {
+  /* heller HG des Schalters */
+  position: absolute;
+  background-color: var(--lightpurple);
+  border-radius: 17px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-label:after {
+.slider:before {
+  /* weißer Kreis */
+  background-color: white;
+  border-radius: 50%;
   content: "";
   position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 26px;
+  left: 4px;
+  bottom: 4px;
   height: 26px;
-  background: #fff;
-  border-radius: 90px;
-  transition: 0.3s;
+  width: 26px;
 }
 
-input:checked + label {
-  background: rgb(29, 2, 51);
+input:checked + .slider {
+  background-color: var(--darkpurple);
 }
 
-input:checked + label:after {
-  left: calc(100% - 5px);
-  transform: translateX(-100%);
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
 }
 
 /* nav bar bottom */
