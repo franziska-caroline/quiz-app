@@ -28,9 +28,15 @@ function toggleBookmark(event) {
 // 3. ich brauche das HTML Element dass modifiziert wird (answer)
 // 4. Was muss dann passieren?
 // 5. Wenn ich auf den Button klicke soll das Attribut "hidden" getoggelt werden(da oder weg sein)
+// 6. Der Text des Buttons soll ausgetauscht werden (Hide/Show)
 
 const answerButton = document.querySelector('[data-js="button-answer"]');
 const answer = document.querySelector('[data-js="answer"]');
 answerButton.addEventListener("click", () => {
   answer.toggleAttribute("hidden");
+  if (answer.hasAttribute("hidden")) {
+    answerButton.textContent = "Show Answer";
+  } else {
+    answerButton.textContent = "Hide Answer";
+  }
 });
