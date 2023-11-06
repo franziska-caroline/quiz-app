@@ -1,9 +1,9 @@
-@import "/componants/global.css";
-@import "/componants/home-page.css";
-@import "/componants/nav-bottom.css";
-@import "/componants/bookmark-page.css";
-@import "/componants/form.css";
-@import "/componants/profil-page.css";
+@import "./componants/Global.css";
+@import "./componants/Homepage/Homepage.css";
+@import "./componants/Nav/Nav-Button.css";
+@import "./componants/Bookmarkpage/Bookmarkpage.css";
+@import "./componants/Form/Form.css";
+@import "./componants/Profile/Profile.css";
 
 :root {
   --darkpurple: rgb(29, 2, 51);
