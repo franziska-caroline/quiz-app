@@ -12,8 +12,8 @@ body {
 header {
   display: flex;
   justify-content: center;
-  color: rgb(29, 2, 51);
-  background-color: rgb(250, 227, 198);
+  color: var(--darkpurple);
+  background-color: var(--lightpurple);
   padding: 1rem;
   font-weight: bolder;
   width: 100%;
@@ -44,13 +44,13 @@ header {
 .user-name {
   margin-left: 30px;
   font-size: 20px;
-  color: rgb(29, 2, 51);
+  color: var(--darkpurple);
   text-transform: uppercase;
 }
 
 .user-info {
   margin-top: 30px;
-  color: rgb(29, 2, 51);
+  color: var(--darkpurple);
   hyphens: auto;
 }
 
@@ -71,8 +71,8 @@ header {
 .counterProfilepage {
   display: flex;
   align-items: center;
-  background-color: rgb(217, 197, 247);
-  color: rgb(29, 2, 51);
+  background-color: var(--lightpurple);
+  color: var(--darkpurple);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
@@ -87,7 +87,7 @@ header {
   margin-right: 24px;
   padding-left: 24px;
   padding-bottom: 100px;
-  color: rgb(29, 2, 51);
+  color: var(--darkpurple);
 }
 
 .setting {
@@ -96,48 +96,41 @@ header {
   align-items: center;
 }
 
-.switch {
-  /* Das label-Element */
-  position: relative; /* Um im nächsten Schritt den runden Button mit position:absolute festzusetzen */
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.label {
+  cursor: pointer;
   width: 64px;
   height: 34px;
+  background: rgb(217, 197, 247);
+  display: block;
+  border-radius: 100px;
+  position: relative;
 }
 
-.switch input {
-  display: none;
-}
-
-.slider {
-  /* heller HG des Schalters */
-  position: absolute;
-  background-color: rgb(217, 197, 247);
-  border-radius: 17px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.slider:before {
-  /* weißer Kreis */
-  background-color: white;
-  border-radius: 50%;
+label:after {
   content: "";
   position: absolute;
-  left: 4px;
-  bottom: 4px;
-  height: 26px;
+  top: 5px;
+  left: 5px;
   width: 26px;
+  height: 26px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
 }
 
-input:checked + .slider {
-  background-color: rgb(29, 2, 51);
+input:checked + label {
+  background: rgb(29, 2, 51);
 }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
 }
 
 /* nav bar bottom */
@@ -146,7 +139,7 @@ input:checked + .slider:before {
   position: fixed;
   width: 100%;
   bottom: 0;
-  background-color: rgb(250, 227, 198);
+  background-color: var(lightorange);
 }
 
 .ul-nav-bottom {
@@ -161,7 +154,7 @@ input:checked + .slider:before {
 }
 
 .active {
-  background-color: rgb(236, 148, 41);
+  background-color: var(--orange);
   padding: 10px;
   width: 100%;
   display: flex;
