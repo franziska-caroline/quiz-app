@@ -7,6 +7,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: white;
 }
 
 header {
@@ -96,50 +97,48 @@ header {
   align-items: center;
 }
 
-.switch {
-  /* Das label-Element */
-  position: relative; /* Um im nächsten Schritt den runden Button mit position:absolute festzusetzen */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
   width: 64px;
   height: 34px;
 }
 
-input[type="checkbox"] {
-  height: 0;
-  width: 0;
-  visibility: hidden;
+.toggle-switch .toggle-input {
+  display: none;
 }
 
-.slider {
-  /* heller HG des Schalters */
+.toggle-switch .toggle-label {
   position: absolute;
-  background-color: var(--lightpurple);
-  border-radius: 17px;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  background-color: var(--lightpurple);
+  border-radius: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.slider:before {
-  /* weißer Kreis */
-  background-color: white;
-  border-radius: 50%;
+/* weißer Kreis */
+.toggle-switch .toggle-label::before {
   content: "";
   position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
   left: 4px;
   bottom: 4px;
-  height: 26px;
-  width: 26px;
+  background-color: #fff;
+  transition: transform 0.3s;
 }
 
-input:checked + .slider {
+.toggle-switch .toggle-input:checked + .toggle-label {
   background-color: var(--darkpurple);
 }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+.toggle-switch .toggle-input:checked + .toggle-label::before {
+  transform: translateX(30px);
 }
 
 /* nav bar bottom */
@@ -175,4 +174,8 @@ input:checked + .slider:before {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.dark-mode {
+  background-color: var(--darkpurple);
 }
