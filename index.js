@@ -30,13 +30,16 @@ function toggleBookmark(event) {
 // 5. Wenn ich auf den Button klicke soll das Attribut "hidden" getoggelt werden(da oder weg sein)
 // 6. Der Text des Buttons soll ausgetauscht werden (Hide/Show)
 
-const answerButton = document.querySelector('[data-js="button-answer"]');
-const answer = document.querySelector('[data-js="answer"]');
-answerButton.addEventListener("click", () => {
-  answer.toggleAttribute("hidden");
-  if (answer.hasAttribute("hidden")) {
-    answerButton.textContent = "Show Answer";
-  } else {
-    answerButton.textContent = "Hide Answer";
-  }
+const answerButtons = document.querySelectorAll('[data-js="button-answer"]');
+const answers = document.querySelectorAll('[data-js="answer"]');
+
+answerButtons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    answers[index].toggleAttribute("hidden");
+    if (answers[index].hasAttribute("hidden")) {
+      button.textContent = "Show Answer";
+    } else {
+      button.textContent = "Hide Answer";
+    }
+  });
 });
